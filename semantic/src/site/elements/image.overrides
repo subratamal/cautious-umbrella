@@ -1,0 +1,18 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.card {
+	.ui.items>.item>.image>img{
+		border-radius:@defaultBorderRadius;
+	}
+}
+.block-card{
+	.cover-image{
+		img{
+			border-radius:@defaultBorderRadius;
+			border-bottom-left-radius: 0;
+	    border-bottom-right-radius: 0;
+      background-color: @white;
+		}
+	}
+}

@@ -1,0 +1,360 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/*******************************
+    Loading custom fonts
+*******************************/
+
+@font-face {
+  font-family: 'ClearSans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('@{fontPath}/ClearSans/ClearSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('@{fontPath}/ClearSans/ClearSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+
+}
+
+@font-face {
+  font-family: 'ClearSans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('@{fontPath}/ClearSans/ClearSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('@{fontPath}/ClearSans/ClearSans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: @customFontName;
+  font-weight: normal;
+  font-style: normal;
+  src: url('@{fontPath}/PTSerif/PT_Serif-Web-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+
+}
+
+/*******************************
+             Headers
+*******************************/
+
+h1 {
+  line-height: @h1LineHeight;
+}
+h2 {
+  line-height: @h2LineHeight;
+}
+
+.singleline-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display:block;
+}
+
+/* Custom Font */
+.custom-font{
+  font-family:@customFontName;
+}
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.ui.footer{
+  .item{
+    .icon{
+      font-size:2 * @fontSize;
+    }
+  }
+}
+
+.showFullText{
+  white-space:initial;
+}
+
+/* Loader Image custom css */
+
+.loaderimage{
+    animation-duration: 1s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+  }
+
+.ui.text.loader.custom-loader{
+  padding-top:0;
+  &:before, &:after{
+    width: 0;
+    height: 0;
+    border: 0;
+    padding:0;
+  }
+  i.icon{
+    color:@primaryColor;
+    font-size:2 * @h1;
+    width:auto;
+    margin:0;
+  }
+}
+
+.ui.text.menu .item.activeClass{
+  color:@red;
+  border-color:@red;
+  border-bottom-style: solid;
+  padding-bottom:9px;
+}
+
+/*******************************
+      Opportunity View Page
+*******************************/
+
+.ui.card.recruiter-teaser-card{
+  text-align:center;
+  margin: @teaserCardMargin;
+}
+
+#opportunity-secondary-title-bar{
+   .title-bar-opportunity-view{
+    .item.opportunity-interactions {
+      color:@unselectedTextColor;
+      &:hover{
+        color:@primaryColor;
+        i.icon {
+          color:@primaryColor;
+        }
+      }
+    }
+  }
+  .section-middle {
+    width: calc(~"100% - 600px");
+  }
+  .section-left,
+  .section-right {
+    width: 300px;
+  }
+  @media screen and (max-width: @computerBreakpoint) {
+    .section-left {
+      display:none;
+    }
+    .section-middle {
+      width: calc(~"100% - 300px");
+      padding-left: 0.65em;
+    }
+  }
+  @media screen and (max-width: @mobileLandscapeBreakPoint) {
+    .section-middle {
+      display: none;
+    }
+    .section-right {
+      width: auto;
+      margin: auto;
+    }
+  }
+  .ui.item.title-bar-opportunity{
+    .opportunity-name {
+      width: 100%;
+      h4 {
+        margin: auto;
+        @media screen and (max-width: @computerBreakpoint) {
+          margin: initial;
+        }
+      }
+    }
+  }
+}
+
+.similar-opportunities .ui.card{
+  box-shadow:none;
+}
+
+.similar-opportunities .ui.card>.content{
+  padding:@simOppCardPadding;
+}
+
+.similar-opportunities .ui.mini-teaser .item{
+  overflow:hidden;
+}
+
+.opportunity-title-card .ui.card.fluid{
+  padding:inherit;
+  @media screen and (max-width: @mobileLandscapeBreakPoint) {
+    padding: initial;
+  }
+}
+
+.opportunity-details-card .ui.card.fluid {
+  padding:inherit;
+  white-space: pre-wrap;
+
+  @media screen and (max-width: @mobileLandscapeBreakPoint) {
+    padding: initial;
+  }
+
+  .share-detail.ui{
+    a.content{
+      color:@unselectedTextColor;
+      &:hover{
+        color:@primaryColor;
+        i.icon {
+          color:@primaryColor;
+        }
+      }
+    }
+  }
+}
+
+.opportunity-details-card .ui.card.fluid h1,h2,h3,h4,h5,h6{
+  margin-top:@cardTopMargin;
+}
+
+.opportunity-title-card .ui.card.fluid h4{
+  margin:@cardTopMargin;
+}
+
+.opportunity-details-card .ui.grid.opportunity-detail-tags{
+  margin-bottom: 1em;
+  a{
+    padding-bottom:10px;
+  }
+}
+
+.opportunity-title-card .opportunity-specs{
+  display:flex;
+}
+
+.opportunity-title-card .opportunity-specs {
+  .opportunity-detail{
+    display:flex !important;
+  }
+}
+
+.opportunity-title-card .opportunity-specs.ui.grid {
+  @media screen and (min-width:@computerBreakpoint) and (max-width:@largeMonitorBreakpoint) {
+    .share-detail.column{
+      padding:0;
+    }
+  }
+  a.apply-button{
+    margin-left:auto;
+    margin-right:@oppTitleCardMargin;
+    @media screen and (max-width: @mobileLandscapeBreakPoint){
+      .ui.button{
+      margin-top: 1em;
+      }
+    }
+  }
+  a.content{
+    color:@unselectedTextColor;
+    &:hover{
+      color:@primaryColor;
+      i.icon {
+        color:@primaryColor;
+      }
+    }
+  }
+}
+
+.opportunity-secondary-title-wrapper .ui.menu.fixed.opportunity-secondary-title-bar{
+  z-index:@titleBarZIndex;
+  padding-top:@titleBarpadding;
+
+}
+
+.recruiter-teaser-image img{
+  width:@recruiterImagewidth;
+  height:@recruiterImagewidth;
+}
+
+.opportunity-secondary-title-wrapper .menu a:hover{
+  border-bottom-style:none;
+}
+
+.secondary-title-opportunity .opportunity-name{
+  float:left;
+}
+
+.secondary-title-opportunity .opportunity-interactions-wrapper{
+  float:right;
+  display: flex;
+}
+
+.similar-opportunities .page-mini-teaser{
+  overflow:hidden;
+}
+
+.secondary-title-opportunity .opportunity-interactions{
+  cursor:pointer;
+}
+
+.opportunity-author{
+  width:100%;
+}
+
+.opportunities-viewpage-grid{
+  padding-top:@gridPadding;
+}
+
+.opportunity-author .opportunity-author-data{
+  img {
+    max-width:@imageMaxWidthHeight;
+    max-height:@imageMaxWidthHeight;
+  }
+  float:left;
+  max-width:@authorWidth;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.menu #opportunity-secondary-title-bar .opportunity-author .opportunity-author-interaction{
+  .secondary-text{
+    display:none;
+  }
+  .extra .content a.item {
+    padding:0;
+    .ui.button{
+      font-size: @authorInteraction;
+    }
+  }
+}
+
+.menu #opportunity-secondary-title-bar .ui.items .item .content{
+  font-size:@fontSize;
+}
+
+.opportunity-icon-details{
+  display:flex;
+  padding-right:1em;
+  align-items: center;
+  padding-bottom:10px;
+}
+
+.opportunity-icon-details .icon{
+  font-size: @iconFontSize;
+  text-align: center;
+  min-width: 1em;
+  @media screen and (max-width:@mobileLandscapeBreakPoint){
+    font-size: @iconSmallFontSize;
+  }
+}
+
+@media screen and (min-width:@tabletBreakpoint){
+  .opportunity-secondary-title-bar .title-bar-opportunity {
+    margin:0;
+    align-items:center;
+    .secondary-title-opportunity{
+      display:flex;
+      align-items:center;
+    }
+  }
+}
+
+@media screen and (min-width:@mobileLandscapeBreakPoint){
+  .opportunity-secondary-title-wrapper .ui.opportunity-secondary-title-bar .recruiter-title-teaser{
+    display:inherit;
+  }
+  .secondary-title-opportunity .opportunity-name{
+    font-size:1.3em;
+  }
+}
+.ui.inverted.dimmer.first-load .ui.loader:after{
+  border-color:@loaderBorderColor transparent transparent;
+}

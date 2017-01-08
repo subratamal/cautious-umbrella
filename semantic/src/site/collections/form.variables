@@ -1,0 +1,9 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@inputFontSize: @fontSize;
+
+/* Checkbox */
+@checkboxLabelFontSize: @fontSize;
+@labelFontSize: @fontSize;

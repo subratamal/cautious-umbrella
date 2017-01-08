@@ -1,0 +1,22 @@
+/*******************************
+         Site Overrides
+*******************************/
+/* Close Icon */
+@closeColor: @black;
+@closeTop: 0;
+@closeRight:0;
+
+@mobileCloseTop: 0rem;
+@mobileCloseRight: 0rem;
+
+/* Scrolling Margin */
+@scrollingMargin: 2rem;
+
+/* Content */
+@contentFontSize:@fontSize;
+
+/* tiny modal width */
+@tinyModalWidth: 400px;
+@modalHeightForMobile: 480px;
+@modalHeightForDesktop: 590px;
+@tinyModalCenterMargin: 0 0 0 -200px; /*@TODO we can use transform also */

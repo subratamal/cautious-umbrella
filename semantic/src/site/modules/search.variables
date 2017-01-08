@@ -1,0 +1,8 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@actionHoverBackground:transparent;
+@categoryNamePadding: 8px 8px 0 8px;
+@resultVerticalPadding: @relativeMedium;
+@categoryNameWidth: auto;

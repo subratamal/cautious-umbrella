@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@selectionMinWidth: auto;
+@itemFontSize:@fontSize;
+@selectionActiveHoverBorderColor:none;
+@selectionVisibleBorderColor:none;
+@selectionFocusBorderColor:none;

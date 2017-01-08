@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@largeMonitorGutter: 5%;
+@widescreenMonitorGutter: 15%;
+@sidebarColumnWidth : 300px;

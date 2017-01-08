@@ -1,0 +1,28 @@
+/*******************************
+         Site Overrides
+*******************************/
+ .ui.huge.header {
+ 	min-height:2em;
+	@media only screen and  (min-width: @mobileLandscapeBreakPoint) and (max-width : @tabletBreakpoint)  {
+	    font-size:@h1;
+	}
+	@media only screen and (max-width: @mobileLandscapeBreakPoint) {
+		font-size:@h2;
+	}
+}
+.landing-page{
+	h2.ui.header{
+		@media only screen and (max-width: @mobileLandscapeBreakPoint) {
+			font-size:@h4;
+		}
+	}
+}
+.ui.images.header.logo{
+	cursor:pointer;
+	.icon.header.logo{
+		color:@primaryColor;
+		font-size:2 * @fontSize;
+    width: auto;
+    margin-right: 0;
+	}
+}

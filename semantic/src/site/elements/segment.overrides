@@ -1,0 +1,41 @@
+/*******************************
+         Site Overrides
+*******************************/
+/*Side bar topic buttons spacing*/
+.ui.segment, .ui.segments .segment {
+	font-size: 1em;
+}
+.ui.segment.side-bar {
+	@media only screen and  (max-width : @tabletBreakpoint)  {
+		box-shadow: none;
+	    border: none;
+	    padding: 0px;
+	    .ui.header {
+			display : none;
+		}
+
+	}
+
+}
+
+
+.ui.segment.sidebar-topics {
+	.button {
+			margin-bottom: 0.5rem;
+    		margin-right: 0.5rem;
+	}
+	padding-bottom: 0.5rem;
+}
+
+
+/*Side bar people or profile spacing for images*/
+.ui.segment.sidebar-profiles {
+	.ui.tiny.image {
+			margin-bottom: 1rem;
+    		margin-right: 1rem;
+	}
+	.ui.tiny.image:nth-child(3n){
+		margin-right: 0;
+	}
+	padding-bottom : 0rem;
+}

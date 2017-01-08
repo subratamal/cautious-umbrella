@@ -1,0 +1,132 @@
+/*******************************
+         Site Overrides
+*******************************/
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'icomoon';
+  src: @fallbackSRC;
+  src: @src;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+i.icon {
+  display: inline-block;
+  opacity: @opacity;
+
+  margin: 0em @distanceFromText 0em 0em;
+
+  width: @width;
+  height: @height;
+
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+}
+
+/* Rating */
+i.icon.heart:before { content: "\e92b"; }
+i.icon.empty.heart:before { content: "\e92c";}
+
+/* Web Content */
+i.icon.search:before { content: "\e918"; }
+
+/*Item Selection*/
+
+i.icon.add.circle:before { content: "\e90d"; }
+i.icon.add:before{ content: "\e90d";}
+i.icon.cancel.circle:before{ content: "\e90e";}
+i.icon.close:before{ content: "\e601";}
+
+i.icon.users:before{ content: "\e936"; }
+i.icon.linkify:before{ content: "\e90a";}
+i.icon.marker:before{ content: "\e937";}
+i.icon.comment.outline:before{ content: "\e903";}
+i.icon.comment.active:before{ content: "\e900";}
+i.icon.save:before{ content: "\e92e";}
+i.icon.save.active:before{ content: "\e904";}
+
+/* Social Icon */
+i.icon.empty.facebook:before{ content: "\e905";}
+i.icon.facebook:before{ content: "\e907";}
+i.icon.empty.twitter:before{ content: "\e906";}
+i.icon.twitter:before{ content: "\e90c";}
+i.icon.linkedin:before{ content: "\e909";}
+i.icon.google.plus:before{ content: "\e908";}
+i.icon.facebook.normal:before{ content: "\e600"}
+i.icon.twitter.normal:before{ content: "\e604"}
+i.icon.googleplus:before{ content: "\e606"}
+
+/* custom input icon */
+i.icon.checkbox:before{ content: "\e910";}
+i.icon.checkbox.active:before{ content: "\e90f";}
+i.icon.checkbox.inactive:before{ content: "\e911";}
+i.icon.radio.disabled:before{ content: "\e913";}
+i.icon.radio.active:before{ content: "\e912";}
+i.icon.radio.inactive:before{ content: "\e914";}
+
+i.icon.toggle.on:before{ content: "\e916";}
+i.icon.toggle.off:before{ content: "\e915";}
+
+i.icon.home:before{ content: "\e917";}
+i.icon.lightning:before{ content: "\e919";}
+
+/* CD LOGO */
+i.icon.header.cd.logo.full:before{ content: "\e91a";}
+i.icon.header.cd.monogram.logo:before{ content: "\e91b";}
+i.icon.header.search:before{ content: "\e91d";}
+
+i.icon.share:before{ content: "\e91e";}
+i.icon.add.user:before{ content: "\e91f";}
+i.icon.delete:before{ content: "\e920";}
+i.icon.notification:before{ content: "\e921";}
+i.icon.soup:before{ content: "\e922";}
+i.icon.view.publish:before{ content: "\e923";}
+i.icon.add.image:before{ content: "\e924";}
+i.icon.add.text:before{ content: "\e925";}
+i.icon.add.video:before{ content: "\e926";}
+i.icon.add.music:before{ content: "\e926";}
+i.icon.event.date:before{ content: "\e928";}
+i.icon.event.happening.now:before{ content: "\e929";}
+i.icon.report:before{ content: "\e902";}
+i.icon.left.arrow:before{ content: "\e92a";}
+i.icon.right.arrow:before{ content: "\e92d";}
+
+i.icon.event.active:before{ content: "\e930";}
+i.icon.event.inactive:before{ content: "\e931";}
+i.icon.magzine.active:before{ content: "\e932";}
+i.icon.magzine.inactive:before{ content: "\e933";}
+
+i.icon.birthday:before{ content: "\e934";}
+i.icon.college:before{ content: "\e935";}
+i.icon.skills:before{ content: "\e938";}
+i.icon.website:before{ content: "\e939";}
+i.icon.enter:before{ content: "\e901";}
+
+i.icon.cross:before{ content: "\e601";}
+/* list icon */
+i.icon.list:before{ content: "\e93a"; font-size:30px;}
+
+/* 25under25 icon */
+i.icon.twnetyfivelogo:before{ content: "\e900";}
+
+i.icon.bookmark:before{ content: "\e93c";}
+i.icon.briefcase:before{ content: "\e93d";}
+i.icon.clock:before{ content: "\e93e";}
+i.icon.dollar:before{ content: "\e93f";}
+i.icon.euro:before{ content: "\e940";}
+i.icon.rupee:before{ content: "\e941";}

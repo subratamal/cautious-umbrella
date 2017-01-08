@@ -1,0 +1,65 @@
+.SwipeViewsContainer {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+}
+
+.SwipeViewsHeader {
+  min-height: 40px;
+  display: block;
+  flex-flow: row nowrap;
+}
+
+.SwipeViewsTabs {
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: -4px;
+}
+
+.SwipeViewsTabs > ul {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.SwipeViewsTab {
+  display: inline;
+  padding: 8px 20px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.SwipeViewsTab > a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.SwipeViewsTabs .active {
+  color: #d94560;
+  border-bottom: 3px solid;
+}
+.SwipeViewsTabs .active a{
+  color: #d94560;
+}
+.SwipeViews {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: hidden;
+}
+
+.SwipeView {
+  overflow: hidden;
+  padding: 1px;
+}
+.md-scroll-mask { position: initial;}

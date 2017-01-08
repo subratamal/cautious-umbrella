@@ -1,0 +1,13 @@
+webapp-main:
+  build: .
+  environment:
+    NODE_ENV: development
+  ports:
+    - '5000:5000'
+  # This is to map volumes from host machine to docker
+  volumes:
+    - .:/webapp-main/:rw
+
+  # This is to make sure; any changes in code replicate and run the nodejs server
+  command: >
+    sh -c 'npm install && gulp build && npm run build && pm2 start --no-daemon  bin/server.js'

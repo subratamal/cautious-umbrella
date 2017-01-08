@@ -1,0 +1,118 @@
+{
+    "mappings" : {
+      "opportunity" : {
+        "properties" : {
+          "applicant_count" : {
+            "type" : "integer",
+            "index" : "not_analyzed"
+          },
+          "compensation" : {
+            "properties" : {
+              "currency" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              },
+              "value" : {
+                "type" : "integer",
+                "index" : "not_analyzed"
+              }
+            }
+          },
+          "created_time" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "deadline" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "description" : {
+            "properties" : {
+              "label" : {
+                "type" : "string"
+              },
+              "text" : {
+                "type" : "string"
+              }
+            }
+          },
+          "featured" : {
+            "type" : "string",
+            "index" : "no"
+          },
+          "href" : {
+            "type" : "string",
+            "index" : "no"
+          },
+          "id" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "locations" : {
+            "properties" : {
+              "city" : {
+                "type" : "string",
+                "fields": {
+                  "raw": {
+                    "type":  "string",
+                    "index": "not_analyzed"
+                  }
+                }
+              },
+              "country" : {
+                "type" : "string",
+                "fields": {
+                  "raw": {
+                    "type":  "string",
+                    "index": "not_analyzed"
+                  }
+                }
+              },
+              "formatted_address" : {
+                "type" : "string"
+              },
+              "latitude" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              },
+              "longitude" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              }
+            }
+          },
+          "paid" : {
+            "type" : "string",
+            "index" : "no"
+          },
+          "redirect_url" : {
+            "type" : "string",
+            "index" : "no"
+          },
+          "status" : {
+            "type" : "integer",
+            "index" : "not_analyzed"
+          },
+          "subtype" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "title" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "updated_time" : {
+            "type" : "string",
+            "index" : "no"
+          },
+          "vacancies" : {
+            "type" : "integer",
+            "index" : "not_analyzed"
+          }
+        }
+      }
+    }
+}

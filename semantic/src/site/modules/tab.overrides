@@ -1,0 +1,21 @@
+/*******************************
+        User Overrides
+*******************************/
+.ui.layout-tab.tab {
+	 .ui.segment {
+		padding : 0rem;
+		border : none;
+		box-shadow:none;
+		.header {
+			display:none;
+		}
+	}
+}
+.tabs-secondary-menu{
+	.ui.text.menu{
+		margin-top:0;
+	}
+	.tab-slider{
+		border-bottom:1px solid @borderColor;
+	}
+}

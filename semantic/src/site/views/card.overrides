@@ -1,0 +1,263 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+.block-card{
+	a{
+		color:@textColor;
+		&:hover{
+			color:@primaryColor;
+		}
+	}
+	.content {
+		.container {
+			position:relative;
+			margin-top:-(@tinyWidth/2 + 16); /* keeping content on image, here 16 is a padding space*/
+		}
+	}
+	.title-min-height{
+		min-height:2*@lineHeight;
+	}
+}
+
+.ui.card {
+	.ui.secondary.pointing.menu.interactivity-card {
+		border-bottom:0; /* remove secondary menu in card border botttom */
+		.item:hover {
+		    border-bottom-width: 0; /* card secondary menu removed border bottom on hover */
+		}
+	}
+	.content {
+		.meta{
+			a{
+				&:hover{
+					color:@primaryColor;
+				}
+			}
+		}
+		a.meta{
+			&:hover{
+				color:@primaryColor;
+			}
+		}
+	}
+}
+.ui.card.big-feature-card {
+	>.row{
+		padding:0; /* row default give top and bottom padding */
+	}
+	.ui.image.column{
+		padding:0;
+	}
+	.description {
+		height:320px; /* height fixed for big card */
+		border-top-left-radius:0;
+		border-bottom-left-radius: 0; /* card top left border radius removed */
+		@media only screen and (max-width: @mobileLandscapeBreakPoint) {
+			height: auto;
+			/* deafult taking padding by semantic in mobile with important*/
+			&.column.wide{
+				padding-top:0 !important;
+				padding-bottom:0 !important;
+			}
+		}
+	}
+	.big-feature-card-footer {
+		&.extra {
+			border-top: 0 none !important;
+			padding-bottom: 0;
+		}
+		.profile-min-teaser {
+		margin-bottom: 1em;
+		}
+	}
+	.image.bg-img{
+		background-size:cover;
+		background-position: center;
+    	background-repeat: no-repeat;
+		height:320px; /* height fixed for image */
+		border-radius:@defaultBorderRadius;
+		border-bottom-right-radius: 0;
+    	border-top-right-radius: 0;
+	}
+}
+.ui.card.big-feature-card.advertisement-card{
+	.image.bg-img{
+		border-radius: @defaultBorderRadius;
+	}
+}
+.ui.stackable.card.big-feature-card{
+	.image.bg-img{
+		@media only screen and (max-width: @mobileLandscapeBreakPoint) {
+			height:auto;
+			padding-bottom:	18.90vh !important; /*ratio of image 1/2.3 is followed below 480px, block card image has 465/223 ratio  */
+			border-radius:@defaultBorderRadius;
+			border-bottom-left-radius: 0;
+	    	border-bottom-right-radius: 0;
+		}
+	}
+}
+/* adevertisement secondary slider */
+.ui.card.ad-card-slider{
+		.ui.image{
+			height:@advertisementCardMinHeight;
+			background-size:cover;
+			background-position: center;
+	    	background-repeat: no-repeat;
+			border-radius:@defaultBorderRadius;
+			border-bottom-right-radius: 0;
+	    	border-top-right-radius: 0;
+	    	width:100%;
+		}
+}
+/* Due to slick list margin taking in negative */
+.slick-list{
+	.slick-slide{
+		 .ui.card.big-feature-card.stackable.fluid.grid{
+		 	margin-left:0 !important;
+		 	margin-right:0 !important;
+		 }
+	}
+}
+
+/* Featured Card Slider custom css */
+.featured-card-slider{
+ 	.slick-list {
+	   	border:1px solid @borderColor;
+	   	border-radius:@absoluteBorderRadius;
+   	   	.ui.card{
+     		box-shadow:none; /* In mobile card showing box shadow in betwee image */
+   		}
+ 	}
+}
+
+@media only screen and (max-width: @tabletBreakpoint) {
+	/* image align left */
+	.ui.card .ui.items  {
+		> .item {
+			> .image {
+					margin-left:0;
+					margin-right:0;
+				}
+		}
+		.meta{
+			a{
+				&:hover{
+					color:@primaryColor;
+				}
+			}
+		}
+	}
+}
+
+.card.hide-block-shadow {
+	box-shadow: none;
+}
+
+/* Page Featured Card */
+.ui.card.page-featured-card{
+	position:relative;
+	.ui.inner-container{
+		padding-left:3*@relative14px;
+		padding-right:3*@relative14px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		.ui.items {
+			.item{
+				h3{
+					a{
+						color:@white;
+					}
+				}
+				.meta{
+					color:@white;
+					a.location{
+						color:@white;
+					}
+				}
+				.ui.tiny.image{
+					img{
+						border:1px solid @white;
+					}
+				}
+			}
+		}
+	}
+	.ui.image.bg-img{
+		border-radius:@defaultBorderRadius;
+	}
+	.ui.tiny.image {
+		img{
+			background-color:@white;
+		}
+	}
+	@media only screen and (max-width: @mobileLandscapeBreakPoint) {
+		.ui.column.page-featured-column{
+			width:auto% !important; /*semantic default use important */
+		}
+	}
+}
+.ui.feed-card.card{
+	display:block;
+	.ui.transparent.icon.input>input{
+		padding-left:1em !important; /* semantic overide with important so added*/
+	}
+	.ui.form textarea:not([rows]){
+		height:3em;
+		min-height:3em;
+		border:none;
+		overflow:hidden;
+		resize:none;
+	}
+	.ui.secondary.pointing.menu{
+		.item{
+			border-bottom-style:none;
+		}
+	}
+	.ui.image.feed-bg-img{
+		background-size:cover;
+		background-position: center center;
+		padding:47.85% 0 0 0; /* @TODO: manage by calculation, responsive bg image manage */
+	    overflow: hidden;
+	    position: relative;
+	    width: 100%;
+	}
+}
+.ui.page-block-card.card.block-card{
+	.content{
+		.ui.tiny.image{
+			img{
+				background-color:@white;
+			}
+		}
+	}
+}
+
+.cover-image{
+  width : 100%;
+  background-image: url('/images/thumbs.png');
+  background-size: cover;
+  padding-top : 47.95%;
+  background-position: center;
+  position: relative;
+}
+
+.ui.centered.image.cover-image-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.opportunity-block-card .item .content .ui.text.right.aligned.container{
+    .ui.header:last-child{
+      margin-bottom:0;
+    }
+}
+
+.opportunity-featured-card h4{
+  display:flex;
+  margin-right:1em;
+}

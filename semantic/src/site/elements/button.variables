@@ -1,0 +1,33 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/* Button */
+@backgroundColor: @default;
+
+/* Hover */
+@hoverBackgroundColor: @defaultHover;
+
+/* Pressed Down */
+@downBackgroundColor: @brown;
+
+/* Active */
+@activeBackgroundColor: #brownHover;
+
+/* Text */
+@fontFamily: @headerFont;
+@fontWeight: normal;
+
+/* Min Width Primary Button */
+@primaryButtonMinWidth: 105px;
+
+/* Inverted */
+@invertedBorderSize: 1px;
+
+/* Basic Hover */
+@basicHoverBackground: @brown;
+@basicHoverTextColor: #FFFFFF;
+@basicHoverBoxShadow:
+  0px 0px 0px @basicBorderSize @brown inset,
+  0px 0px 0px 0px @brown inset
+;

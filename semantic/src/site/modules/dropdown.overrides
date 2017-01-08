@@ -1,0 +1,10 @@
+/*******************************
+        User Overrides
+*******************************/
+.ui.scrolling.dropdown{
+  &:hover{
+    .menu{
+        display:@selectionDisplay;
+    }
+  }
+}

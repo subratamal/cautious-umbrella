@@ -1,0 +1,10 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.send-again.medium.loader:after, .ui.medium.loader:before {
+	width: 1.2857em;
+    height: 1.2857em;
+    margin: 0 0 0 -.64285em;
+	border-color: #ccc transparent transparent;
+
+}

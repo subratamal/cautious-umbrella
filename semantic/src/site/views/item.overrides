@@ -1,0 +1,104 @@
+/*******************************
+   User Variable Overrides
+*******************************/
+.ui.items.mini-teaser >.item{
+	@media only screen and (max-width: @tabletBreakpoint) {
+		flex-direction : initial;
+	}
+	.content {
+		line-height : @teaserLineHeight;
+	}
+	.image{
+		border-radius:@profileImageRadius;
+	}
+}
+
+.ui.items.mini-teaser>.item>.mini.image {
+	@media only screen and (max-width: @tabletBreakpoint) {
+		max-height : none !important;
+		width : @miniWidth !important;
+	}
+}
+
+
+.ui.items.mini-teaser>.item>.image+.content{
+	padding-left : 0.8em;
+}
+
+.ui.items.mini-teaser>.item>.tiny.image {
+	@media only screen and (max-width: @tabletBreakpoint) {
+		max-height : none !important;
+		width : @tinyWidth !important;
+	}
+}
+.profile-teaser{
+	.ui.items{
+		.meta {
+			margin-bottom:0.6em;
+		}
+	}
+}
+.ui.menu.three.item{
+	.item{
+		&:hover{
+		padding-bottom:@itemHoverPaddingBottom; /* removing item moving effect */
+		}
+	}
+}
+/*side bar pages list padding top except first child*/
+ .ui.relaxed.list.side-bar-pages >.item:not(:first-child){
+ 	padding-top : 0.5rem;
+ }
+
+ .segment.side-bar-pages .ui.relaxed.list.side-bar-pages >.item:not(:first-child){
+   margin-top : 0.5rem;
+ }
+
+ /*side bar pages list padding bottom 0 last child*/
+ .ui.relaxed.list.side-bar-pages >.item:last-child{
+ 	padding-bottom : 0rem;
+ }
+
+  /*side bar pages list padding top 0 for first child*/
+ .ui.relaxed.list.side-bar-pages >.item:first-child{
+ 	padding-top : 0rem;
+ }
+ .ui.items.mini-teaser{
+  width:@width;
+ }
+ .opportunity-secondary-title-wrapper .ui.header-menu.menu.opportunity-secondary-title-bar .secondary-title-opportunity .opportunity-name .item{
+  &:hover{
+    padding-bottom:@itemHoverPaddingBottom;
+  }
+  padding-bottom:@itemHoverPaddingBottom;
+  display:block;
+  @media screen and (max-width:480px){
+    max-width:12em;
+    max-height:40px;
+    overflow:hidden;
+    align-items:flex-start;
+    padding-bottom:@itemHoverPaddingBottom;
+    padding-top:@itemHoverPaddingBottom;
+    text-overflow:ellipsis;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    display: -webkit-box;
+  }
+  @media screen and (min-width:768px){
+    max-width:30em;
+  }
+ }
+ .opportunity-title-card .opportunity-specs a.item{
+ @media screen and (min-width:480px){
+   padding-top:@itemHoverPaddingBottom;
+   }
+ }
+ .opportunity-secondary-title-wrapper .ui.header-menu.menu.opportunity-secondary-title-bar .secondary-title-opportunity .opportunity-interactions-wrapper .item{
+  &:hover{
+    padding-bottom:@itemHoverPaddingBottom;
+  }
+   padding-bottom:@itemHoverPaddingBottom;
+ }
+
+ .opportunity-block-card .ui.menu.opportunity-interactions .item{
+ }

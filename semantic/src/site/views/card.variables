@@ -1,0 +1,36 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*******************************
+             Card
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* Card */
+@fontFamily: @headerFont;
+
+
+*-------------------
+       Content
+--------------------*/
+
+@starColor: @lightYellow;
+@starActiveColor: @yellow;
+
+@likeColor: @lightRed;
+@likeActiveColor: @red;
+
+/* Metadata */
+@metaColor: @default;
+
+/* Links */
+@metaLinkColor: @default;
+@metaLinkHoverColor: @primaryColor;
+
+/* Extra Links */
+@extraLinkColor: @default;
+@extraLinkHoverColor: @primaryColor;

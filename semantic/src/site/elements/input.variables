@@ -1,0 +1,19 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*-------------------
+      Element
+--------------------*/
+
+@inputFont: @headerFont;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Error */
+@placeholderErrorColor: lighten(@errorColor, 30);
+@placeholderErrorFocusColor: lighten(@errorColor, 20);
+
+@labelSize: @fontSize;

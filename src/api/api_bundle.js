@@ -1,0 +1,16 @@
+/* an interface exporting all api calls for corrosponding modules */
+export { loginWithEmail } from './authentication/login'
+export getAccountInfo from './account/accounts';
+export { fetchProfileInfo } from './profile/profile_data'
+export { oauthToken } from './authentication/oauth_token'
+export { getCSRFToken } from './authentication/csrf_token'
+export { updateProfile } from './profile/profile_data'
+export { logout } from './authentication/login'
+export { resetUnseenCount } from './connectionRequests'
+export * from './discoverPage/discoverPage_api_bundle'
+export * from './universityPage/universityPage_api_bundle'
+export * from './landingPage/landingPage_api_bundle'
+export * from './common/common_api_bundle'
+export * from './homePage/homePage_api_bundle'
+export * from './eventsPage/eventsPage_api_bundle'
+export * from './opportunitiesPage/opportunitiesPage_api_bundle'

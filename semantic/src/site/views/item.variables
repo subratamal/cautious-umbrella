@@ -1,0 +1,10 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@metaLinkHoverColor:@primaryColor;
+@mobileContentImageDistance: 0em;
+@miniWidth: 40px;
+@tinyWidth: 60px;
+@profileImageRadius:@absoluteBorderRadius;
+/* fix for item bouncing on hover */
+@itemHoverPaddingBottom: 10px;

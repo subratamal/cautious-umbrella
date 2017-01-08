@@ -1,0 +1,25 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+@backgroundColor: @default;
+@fontWeight: normal;
+@fontFamily: @headerFont;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+@labelHoverBackgroundColor: @defaultHover;
+
+/* Active */
+@labelActiveBackgroundColor: @defaultHover;

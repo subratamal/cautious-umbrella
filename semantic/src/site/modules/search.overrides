@@ -1,0 +1,48 @@
+/*******************************
+         Site Overrides
+*******************************/
+@searchTextCenter:1.93em;
+@searchResultResponsiveWidth:18em;
+.university-search-form{
+	.ui.category.search>.results .category .result{
+		margin-left:auto;
+	}
+	.ui.category.search {
+		.ui.primary.button{
+			padding-left: @searchTextCenter;
+			padding-right:@searchTextCenter;
+		}
+	}
+}
+.university-search-page{
+	position:relative;
+	z-index:1;
+	.ui.category.search .results{
+		.category{
+			.result{
+				&:hover{
+					background-color:@searchResultHover;
+					.content{
+						.title{
+							color:@primaryColor;
+						}
+					}
+				}
+			}
+		}
+		@media only screen and  (max-width: @mobileLandscapeBreakPoint)  {
+			width:@searchResultResponsiveWidth;
+		}
+	}
+}
+.opportunity-search-form{
+	.ui.category.search>.results .category .result{
+		margin-left:auto;
+	}
+	.ui.category.search {
+		.ui.primary.button{
+			padding-left: @searchTextCenter;
+			padding-right:@searchTextCenter;
+		}
+	}
+}

@@ -1,0 +1,164 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/*----------------------
+         Colored
+-----------------------*/
+
+.ui.grid > .row > .pantonep179-15c.column,
+.ui.grid > .row > .pantonep179-4u.column,
+.ui.grid > .row > .pantone150c.column,
+.ui.grid > .row > .pantonep62-14c.column,
+.ui.grid > .row > .pantonep23-3c.column,
+.ui.grid > .row > .pantonep13-2c.column,
+.ui.grid > .row > .primary.column,
+.ui.grid > .row > .secondary.column {
+  margin-top: -(@rowSpacing / 2);
+  margin-bottom: -(@rowSpacing / 2);
+  padding-top: (@rowSpacing / 2);
+  padding-bottom: (@rowSpacing / 2);
+}
+
+/* primary */
+.ui.grid > .primary.row,
+.ui.grid > .primary.column,
+.ui.grid > .row > .primary.column {
+  background-color: @primaryColor !important;
+  color: @white;
+}
+
+/* secondary */
+.ui.grid > .secondary.row,
+.ui.grid > .secondary.column,
+.ui.grid > .row > .secondary.column {
+  background-color: @secondaryColor !important;
+  color: @white;
+}
+
+/* pantonep179-15c */
+.ui.grid > .pantonep179-15c.row,
+.ui.grid > .pantonep179-15c.column,
+.ui.grid > .row > .pantonep179-15c.column {
+  background-color: @pantonep179-15c !important;
+  color: @white;
+}
+
+/* pantonep179-4u */
+.ui.grid > .pantonep179-4u.row,
+.ui.grid > .pantonep179-4u.column,
+.ui.grid > .row > .pantonep179-4u.column {
+  background-color: @pantonep179-4u !important;
+  color: @white;
+}
+
+/* pantone150c */
+.ui.grid > .pantone150c.row,
+.ui.grid > .pantone150c.column,
+.ui.grid > .row > .pantone150c.column {
+  background-color: @pantone150c !important;
+  color: @white;
+}
+
+/* pantonep62-14c */
+.ui.grid > .pantonep62-14c.row,
+.ui.grid > .pantonep62-14c.column,
+.ui.grid > .row > .pantonep62-14c.column {
+  background-color: @pantonep62-14c !important;
+  color: @white;
+}
+
+/* pantonep23-3c */
+.ui.grid > .pantonep23-3c.row,
+.ui.grid > .pantonep23-3c.column,
+.ui.grid > .row > .pantonep23-3c.column {
+  background-color: @pantonep23-3c !important;
+  color: @white;
+}
+
+/* pantonep13-2c */
+.ui.grid > .pantonep13-2c.row,
+.ui.grid > .pantonep13-2c.column,
+.ui.grid > .row > .pantonep13-2c.column {
+  background-color: @pantonep13-2c !important;
+  color: @white;
+}
+
+
+.block-card-container {
+  @media only screen and  (max-width: @mobileLandscapeBreakPoint) {
+    .ui[class*="three column"].doubling:not(.stackable).grid > .row > .column,
+    .ui[class*="three column"].doubling:not(.stackable).grid > .column:not(.row),
+    .ui.grid > [class*="three column"].doubling:not(.stackable).row.row > .column  {
+      width: @oneColumn !important;
+    }
+  }
+}
+
+
+@media only screen and  (min-width: @mobileLandscapeBreakPoint) and (max-width : @largestMobileScreen)  {
+  .ui.stackable.grid>.column:not(.row).side-bar-page-card {
+    width: @twoColumn !important;
+  }
+}
+
+
+@media only screen and  (min-width: @mobileLandscapeBreakPoint) and (max-width : @largestMobileScreen)  {
+  .ui.stackable.grid>.column:not(.row).side-bar-profile-card {
+    width: @twoColumn !important;
+  }
+}
+
+/* setting positioning of page only before mobile*/
+.ui.grid {
+  .column.sidebar-content{
+    width:@sidebarColumnWidth !important;
+  }
+  .column.mainbody-content{
+    width:~"calc(100% - @{sidebarColumnWidth})" !important;
+  }
+}
+
+/*university masthead */
+.masthead{
+  background-size:cover;
+  min-height:400px;
+  border-radius:@defaultBorderRadius;
+  .inner-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  @media only screen and  (min-width: @mobileBreakpoint) and (max-width : @tabletBreakpoint)  {
+    min-height:320px;
+  }
+}
+.landing-page {
+  .masthead{
+    border-radius:@defaultBorderRadius;
+    background-size:cover;
+    padding:20px;
+    .ui.button{
+      margin:0 0.5em 0.5em 0.5em; /* spacing between button */
+    }
+    @media only screen and  (max-width: @mobileLandscapeBreakPoint)  {
+
+      .ui.container.button-option{
+        padding:0;
+        margin:0 !important; /* container takes margin as important so need add important */
+      }
+    }
+  }
+}
+
+.footer{
+  @media only screen and  (max-width: @mobileLandscapeBreakPoint)  {
+    .ui.grid.footer-container{
+      .column{
+        width:100% !important; /* semantic default override using important*/
+      }
+    }
+  }
+}

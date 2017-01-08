@@ -1,0 +1,11 @@
+/*******************************
+        Site Overrides
+*******************************/
+.ui.form{
+	.ui.auth-form.error.message{
+		/* error message need to customize */
+		display:block;
+		background:#FFFFFF;
+		padding:0;
+	}
+}

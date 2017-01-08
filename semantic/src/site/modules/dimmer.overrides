@@ -1,0 +1,6 @@
+/*******************************
+        User Overrides
+*******************************/
+.ui.dimmer .send-again .ui.loader :after{
+	    border-color: #ccc transparent transparent;
+}

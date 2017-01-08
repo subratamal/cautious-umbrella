@@ -1,0 +1,37 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*******************************
+             Menu
+*******************************/
+
+/*-------------------
+      Collection
+--------------------*/
+
+/* Menu */
+@fontFamily: @headerFont;
+
+/* Hovered Item */
+@hoverItemTextColor: @linkHoverColor;
+/* Active Item */
+@activeItemTextColor: @linkHoverColor;
+
+/* Pointing */
+@secondaryPointingBorderWidth: 1px;
+@secondaryPointingHoverTextColor: @linkHoverColor;
+@secondaryMenuHoverBorderWidth: 3px;
+/* Text */
+@textMenuItemSpacing: @relative12px;
+@textMenuItemPadding: @relative12px @textMenuItemSpacing;
+
+/* Secondary */
+@secondaryActiveItemColor: @primaryColor;
+@secondaryPointingActiveBorderColor: @primaryColor;
+@secondaryPointingActiveTextColor: @primaryColor;
+@secondaryPointingActiveFontWeight: normal;
+@textMenuItemColor: @darkTextColor;
+
+/* Header menu max height */
+@menuHeight: 3.75 * @emSize;

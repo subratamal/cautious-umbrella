@@ -1,0 +1,37 @@
+/*******************************
+         Site Overrides
+*******************************/
+.main.containers{
+	margin-top:5em;
+}
+
+.page-title-text{
+	padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ui.page.grid.page-feed{
+	margin:0 auto;
+	max-width:@computerVeryRelaxedGridWidth;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.ui.page.grid.page-feed{
+	@media only screen and (max-width: @tabletBreakpoint){
+		max-width:@tabletWidth;
+		margin:0 auto !important; /* semantic override using important*/
+		padding-left: 5%;
+    padding-right: 5%;
+	}
+	@media only screen and (min-width: @largeMonitorRelaxedGridWidth) and (max-width: @widescreenMonitorBreakpoint){
+		max-width:@largeMonitorVeryRelaxedGridWidth;
+		margin:0 auto !important; /* semantic override using important*/
+		padding-left: 5%;
+    padding-right: 5%;
+	}
+	@media only screen and (min-width: @widescreenMonitorBreakpoint){
+		max-width:@largeMonitorBreakpoint;
+		margin:0 auto !important; /* semantic override using important*/
+		padding-left: 5%;
+    padding-right: 5%;
+	}
+}

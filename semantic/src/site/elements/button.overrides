@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.primary.button{
+	min-width:@primaryButtonMinWidth;
+}
+
+
+.ui.basic.button.connect-decline-button{
+	margin-left: 0.5rem;
+}

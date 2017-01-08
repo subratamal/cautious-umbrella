@@ -1,0 +1,216 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName      : 'ClearSans';
+@customFontName  : 'PTSerif';
+
+@importGoogleFonts : false;
+
+@pageFont          : @fontName;
+@headerFont        : @fontName;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+
+/* The size of page text  */
+@fontSize : 14px;
+
+/*--------------
+  Page Heading
+---------------*/
+@headerFontWeight : normal;
+@headerLineHeight : 1.5em;
+
+@h1 : 2.5rem;
+@h2 : 1.714rem;
+@h3 : 1.28rem;
+@h4 : 1.071rem;
+@h5 : 1rem;
+
+@h1LineHeight : 3em;
+@h2LineHeight : 1.6875em;
+@h3LineHeight : 1.5em;
+@h4LineHeight : 1.125em;
+@h5LineHeight : 1.125em;
+
+/* Header Top Padding */
+@headerTopPadding : 1rem;
+
+/*-------------------
+        Page
+--------------------*/
+
+@lineHeight          : 1.5em;
+@pageOverflowX       : initial;
+@teaserLineHeight    : 1.3em;
+
+/*-------------------
+        Sizes
+--------------------*/
+
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+
+@tinySize        : (10 / 16);
+@smallSize       : (12 / 16);
+@mediumSize      : (16 / 16);
+@largeSize       : (21 / 16);
+@hugeSize        : (40 / 16);
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor        : @red;
+@secondaryColor      : @yellow;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Branding Colors  ---*/
+
+@pantonep179-15c          : rgb(46, 45, 44);
+@pantonep179-4u           : rgb(204, 204, 204);
+@pantone150c              : rgb(255, 179, 89);
+@pantonep62-14c           : rgb(217, 69, 96);
+@pantonep23-3c            : rgb(210, 192, 174);
+@pantonep13-2c            : rgb(221, 210, 192);
+
+@red                      : @pantonep62-14c;
+@yellow                   : @pantone150c;
+@black                    : @pantonep179-15c;
+@grey                     : @pantonep179-4u;
+@brown                    : @pantonep23-3c;
+
+@default                  : @pantonep13-2c;
+@defaultHover             : saturate(darken(@default, 5), 10, relative);
+
+/*---  Light Colors  ---*/
+@lightRed         : @red;
+@lightYellow         : @yellow;
+@lightBrown          : @brown;
+
+@secondaryColorHover  : saturate(darken(@secondaryColor, 5), 10, relative);
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+@focusedFormBorderColor: @red;
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor               : @default;
+@strongBorderColor         : @default;
+@internalBorderColor       : @default;
+@selectedBorderColor       : @default;
+@strongSelectedBorderColor : @default;
+@disabledBorderColor       : @default;
+
+@solidInternalBorderColor  : @default;
+@solidBorderColor          : @default;
+@solidSelectedBorderColor  : @default;
+
+/*----Border radius-------*/
+
+@absoluteBorderRadius: @6px;
+@defaultBorderRadius: @absoluteBorderRadius;
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Negative */
+@negativeColor           : @red;
+@negativeBackgroundColor : saturate(lighten(@negativeColor, 42), 10, relative);
+@negativeBorderColor     : @red;
+@negativeHeaderColor     : @red;
+@negativeTextColor       : @red;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : @primaryColor;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverUnderline  : @linkUnderline;
+
+/* Breakpoints */
+@mobileLandscapeBreakPoint: 480px;
+@midTabletBreakPoint: 600px;
+
+/*-------------------
+     Brand Colors
+--------------------*/
+
+@facebookColor   : #5676C8;
+@twitterColor    : #00aced;
+
+/* image width */
+@tinyWidth: 60px;
+
+/* AdCard minHeight */
+@advertisementCardMinHeight : 300px;
+
+/* search result hover bgcolor*/
+@searchResultHover:#eeeeee;
+
+/* Social Media colors */
+@twitter: #00aced;
+@facebook: #3b5998;
+@googleplus: #dd4b39;
+@linkedin: #007bb6;
+
+/*Social icon*/
+@socialIconSize : 22px;
+
+@loaderBorderColor: #777777;
+
+/*----------------------
+  Opportunity Viewpage
+-----------------------*/
+@teaserCardMargin: 0px;
+@simOppCardPadding: 0px;
+@cardTopMargin:0px;
+@oppDetailButtonColor:black;
+@oppTitleCardMargin:0;
+@titleBarZIndex:100;
+@titleBarpadding:60px;
+@recruiterImagewidth:100px;
+@authorWidth:15rem;
+@authorPadding:0.7rem;
+@authorInteraction:0.6875rem;
+@opportunityNameMaxWidth:30em;
+@gridPadding: 4rem;
+@iconFontSize: 22px;
+@iconSmallFontSize: 18px;
+@imageMaxWidthHeight: 3rem;
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+@imagePath : '../../themes/campus-diaries/assets/images';
+@fontPath  : '../../themes/campus-diaries/assets/fonts';
+
+/*-------------------
+    Neutral Text
+--------------------*/
+@lightTextColor              : rgba(0, 0, 0, 0.6);
+@unselectedTextColor         : rgba(0, 0, 0, 0.6);
